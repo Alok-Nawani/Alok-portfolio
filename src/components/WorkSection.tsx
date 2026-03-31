@@ -148,7 +148,7 @@ export function WorkSection() {
                 }}
               >
                 <div style={{ fontSize: '0.7rem', color: 'var(--text-secondary)', fontWeight: 'bold' }}>{project.id}</div>
-                <h5 style={{ fontSize: '0.95rem', margin: 0, fontWeight: '700' }}>{project.title.split(' ')[0]}</h5>
+                <h5 style={{ fontSize: '0.95rem', margin: 0, fontWeight: '700' }}>{project.title === 'Alok Portfolio' ? 'Portfolio' : project.title}</h5>
                 <div style={{ height: '2px', width: '20px', background: 'var(--accent-primary)', borderRadius: '2px' }} />
               </motion.div>
             ))}
