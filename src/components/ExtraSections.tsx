@@ -109,7 +109,7 @@ export function CertificatesSection({ onZoom }: { onZoom: (cert: any) => void })
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ delay: idx * 0.1 }}
-            onPointerDown={() => onZoom(cert)}
+            onClick={() => onZoom(cert)}
             className="glass-panel"
             style={{ 
               width: window.innerWidth < 480 ? '100%' : '180px', 
