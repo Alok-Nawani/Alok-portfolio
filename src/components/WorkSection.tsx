@@ -101,7 +101,7 @@ export function WorkSection() {
                   }}
                >
                  <img 
-                   src={`/${activeProject.image}`} 
+                   src={`${import.meta.env.BASE_URL}${activeProject.image}`} 
                    alt={activeProject.title} 
                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                    onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.innerHTML = '<div style="height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(45deg, #1a202c, #2d3748);color:rgba(255,255,255,0.2);font-weight:bold">ALOK PROJECT PREVIEW</div>'; }}

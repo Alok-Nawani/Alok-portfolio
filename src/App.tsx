@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { LandingPage } from './pages/LandingPage';
 import { ActivitiesPage } from './pages/ActivitiesPage';
 import { useState } from 'react';
@@ -10,7 +10,7 @@ function App() {
   const [zoomedVideo, setZoomedVideo] = useState<string | null>(null);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route 
           path="/" 
@@ -164,7 +164,7 @@ function App() {
             </motion.div>
           )}
       </AnimatePresence>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

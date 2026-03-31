@@ -109,7 +109,7 @@ export function ExperienceSection() {
             >
               <div className="glass-panel" style={{ padding: '0.6rem', borderRadius: '25px', overflow: 'hidden', border: '2px solid var(--accent-primary)', width: 'fit-content' }}>
                 <img 
-                  src="assets/images/user-photo.jpg" 
+                  src={`${import.meta.env.BASE_URL}assets/images/user-photo.jpg`} 
                   alt="Alok Nawani" 
                   style={{ 
                     width: 'auto', 

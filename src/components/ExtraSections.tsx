@@ -141,7 +141,7 @@ export function CertificatesSection({ onZoom }: { onZoom: (cert: any) => void })
                 pointerEvents: 'none'
               }}
             >
-                <img src={`/${cert.img}`} alt={cert.title} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '5px' }} onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.innerHTML = '<span style="color:var(--text-secondary);font-weight:bold;font-size:0.6rem">ALOK</span>'; }} />
+                <img src={`${import.meta.env.BASE_URL}${cert.img}`} alt={cert.title} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '5px' }} onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.innerHTML = '<span style="color:var(--text-secondary);font-weight:bold;font-size:0.6rem">ALOK</span>'; }} />
             </motion.div>
             <h3 style={{ fontSize: '0.85rem', marginBottom: '0.3rem', color: 'var(--accent-highlight)', lineHeight: 1.2, pointerEvents: 'none' }}>{cert.title}</h3>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.7rem', margin: 0, lineHeight: 1.3, pointerEvents: 'none' }}>{cert.desc}</p>
@@ -343,7 +343,7 @@ export function ActivitiesExplorer({
                                   }}
                                 >
                                   <video controls style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
-                                    <source src={vSrc} type="video/mp4" />
+                                    <source src={`${import.meta.env.BASE_URL}${vSrc.startsWith('/') ? vSrc.slice(1) : vSrc}`} type="video/mp4" />
                                   </video>
                                 </motion.div>
                               )
