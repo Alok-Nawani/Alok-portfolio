@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# 🚀 Alok Nawani - Premium 3D Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the source code for my interactive, 3D modern developer portfolio! 
 
-Currently, two official plugins are available:
+Live Demo: [https://Alok-Nawani.github.io/Alok-portfolio](https://Alok-Nawani.github.io/Alok-portfolio)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Overview
 
-## React Compiler
+This portfolio was designed from the ground up to showcase my skills as a Full Stack Developer, Problem Solver, and AI Enthusiast. Rather than a standard scrolling webpage, this portfolio integrates a fully rigged, responsive **3D Robot Character** that follows the user throughout their journey, floating in an immersive glassmorphic 3D environment.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✨ Key Features
+- **Interactive 3D Avatar:** Powered by Three.js and React Three Fiber, an AI robot floats alongside the scroll, responding to page positions seamlessly on both desktop and mobile.
+- **Glassmorphism UI:** A sleek, dark-mode aesthetic utilizing translucent layers, smooth gradients, and ambient glow orbs.
+- **Dynamic Scroll Physics:** Custom damping and scroll engines provide an incredibly smooth, snappy navigation experience.
+- **Multi-View Explorer:** A dedicated Activities hub for exploring videos, group discussions, and class presentations.
+- **Responsive Architecture:** Fully optimized for mobile, tablet, and desktop viewports without sacrificing 3D quality.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Framework:** React 19 + TypeScript + Vite
+- **3D Engine:** Three.js, `@react-three/fiber`, `@react-three/drei`
+- **Animations & Layout:** Framer Motion
+- **Icons:** Lucide React
+- **Routing:** React Router (`HashRouter` enabled for static hosting)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+If you'd like to clone this repository and run it locally:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Alok-Nawani/Alok-portfolio.git
+   cd Alok-portfolio
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. **Deploying Updates:**
+   If you're making updates to the code and want to push the new build straight to GitHub pages, simply run:
+   ```bash
+   npm run deploy
+   ```
+
+## 📬 Let's Connect!
+
+I am always looking to collaborate on exciting AI and Full Stack web projects. 
+- **LinkedIn:** [alok-nawani](https://www.linkedin.com/in/alok-nawani-3957b6357/)
+- **LeetCode:** [ALOK_NAWANI](https://leetcode.com/u/ALOK_NAWANI/)
+- **CodeChef:** [aloknawani](https://www.codechef.com/users/aloknawani)
+- **GitHub:** [Alok-Nawani](https://github.com/Alok-Nawani)
+
+---
+*If you like this portfolio or found the 3D code helpful, feel free to leave a ⭐ on the repository!*
