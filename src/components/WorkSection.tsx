@@ -8,7 +8,7 @@ export function WorkSection() {
   const activeProject = portfolioData.projects[activeIdx];
 
   return (
-    <section className="section container" style={{ padding: '4rem 5%', minHeight: window.innerWidth < 768 ? 'auto' : '100vh', justifyContent: 'center', alignItems: 'stretch' }}>
+    <section className="section container" style={{ padding: '4rem 5%', minHeight: 'auto', justifyContent: 'center', alignItems: 'stretch' }}>
       <div style={{ width: '100%', pointerEvents: 'auto' }}>
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

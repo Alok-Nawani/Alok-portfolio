@@ -4,7 +4,7 @@ import { Mail, Code2, Globe } from 'lucide-react';
 
 export function InterestsSection() {
   return (
-    <section className="section container" style={{ padding: '4rem 5%', minHeight: window.innerWidth < 768 ? 'auto' : '100vh', justifyContent: 'center' }}>
+    <section className="section container" style={{ padding: '4rem 5%', minHeight: 'auto', justifyContent: 'center' }}>
       <motion.h2 
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -49,7 +49,7 @@ export function InterestsSection() {
 
 export function SkillsSection() {
   return (
-    <section className="section container" style={{ padding: '4rem 5%', minHeight: window.innerWidth < 768 ? 'auto' : '100vh', justifyContent: 'center' }}>
+    <section className="section container" style={{ padding: '4rem 5%', minHeight: 'auto', justifyContent: 'center' }}>
       <motion.h2 
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -84,7 +84,7 @@ export function SkillsSection() {
 
 export function CertificatesSection({ onZoom }: { onZoom: (cert: any) => void }) {
   return (
-    <section className="section container" style={{ padding: '4rem 5%', minHeight: window.innerWidth < 768 ? 'auto' : '100vh', justifyContent: 'center', alignItems: 'center' }}>
+    <section className="section container" style={{ padding: '4rem 5%', minHeight: 'auto', justifyContent: 'center', alignItems: 'center' }}>
       <motion.h2 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
