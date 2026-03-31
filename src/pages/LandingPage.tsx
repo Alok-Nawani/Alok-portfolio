@@ -20,8 +20,7 @@ export function LandingPage({ setZoomedCert }: any) {
       <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
-        
-        <ScrollControls pages={window.innerWidth < 768 ? 12 : 6.5} damping={window.innerWidth < 768 ? 0.1 : 0.2}>
+        <ScrollControls pages={window.innerWidth < 768 ? 12 : 7.5} damping={window.innerWidth < 768 ? 0.1 : 0.2}>
           <Float speed={2} rotationIntensity={0.2} floatIntensity={0.5}>
             <RobotCharacter />
           </Float>
