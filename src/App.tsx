@@ -86,7 +86,7 @@ function App() {
               }}
             >
               <img 
-                src={`/${zoomedCert.img}`} 
+                src={`${import.meta.env.BASE_URL}${zoomedCert.img}`} 
                 alt={zoomedCert.title} 
                 style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '10px' }} 
               />
