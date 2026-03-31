@@ -31,7 +31,7 @@ export function RobotCharacter() {
     // Section 0 (Hero) starts at s=0
     // Section 1 (About) starts at s = 1/pages
     // We want to "un-stick" and scroll away smoothly alongside Skills
-    const pages = isMobile ? 13.5 : 8.5;
+    const pages = isMobile ? 12 : 8.5;
     const exitOffset = (2 / pages) - 0.005; 
     const scrollFactor = isMobile ? 15 : 20; // Slower, smoother exit to keep character visible longer
     const scrollY = s > exitOffset ? (s - exitOffset) * state.viewport.height * scrollFactor : 0;
