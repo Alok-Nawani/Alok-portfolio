@@ -171,8 +171,8 @@ export const portfolioData = {
           { label: "Key Points", text: "Company Vision: Redefine everyday wellness with natural aloe-based products. Product Line: Launching with Aloe Glow gel followed by health supplements. Market Research: Identified high demand for organic personal care. Business Strategy: Eco-friendly packaging and transparent sourcing." },
           { label: "Outcome", text: "Enhanced entrepreneurial thinking, creative branding, and business presentation abilities. Strengthened public speaking and market analysis skills." }
         ],
-        video: "/assets/videos/class-presentation.mp4",
-        link: "/assets/presentations/class-presentation.pdf"
+        video: "assets/videos/class-presentation.mp4",
+        link: "assets/presentations/class-presentation.pdf"
     },
     {
         id: "movieReview",

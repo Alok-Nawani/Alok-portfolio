@@ -353,7 +353,7 @@ export function ActivitiesExplorer({
                           {/* Specific Action Buttons for Video Side */}
                           {act.link && (
                             <motion.a
-                              href={act.link}
+                              href={`${import.meta.env.BASE_URL}${act.link.startsWith('/') ? act.link.slice(1) : act.link}`}
                               target="_blank"
                               rel="noreferrer"
                               whileHover={{ scale: 1.05 }}
