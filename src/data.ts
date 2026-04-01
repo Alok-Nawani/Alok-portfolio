@@ -203,7 +203,7 @@ export const portfolioData = {
           { label: "Handling Counterarguments", text: "During the discussion, I listened carefully to opposing views and responded thoughtfully, maintaining respect while firmly defending my perspective." },
           { label: "Outcome", text: "Participating in this group discussion significantly improved my communication, active listening, and critical thinking skills. It also enhanced my ability to construct logical arguments under pressure and strengthened my confidence in public speaking settings." }
         ],
-        video: "/assets/videos/VIDEO-2025-04-28-21-32-00.mp4" // Fallback or first video
+        video: "assets/videos/group-discussion.mp4"
     }
   ],
 
